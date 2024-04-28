@@ -1,0 +1,311 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q7064495",
+                "Meteorite Name": "Novato meteorite",
+                "Country": "United States",
+                "State": "California",
+                "Year": "2012"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.6,
+                    38.1
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q4926933",
+                "Meteorite Name": "Blithfield meteorite",
+                "Country": "Canada",
+                "State": "Ontario",
+                "Year": "1910"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -76.9658,
+                    45.5061
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q6680892",
+                "Meteorite Name": "Loreto",
+                "Country": "M\u00e9xico",
+                "State": "Baja California Sur",
+                "Year": "1896"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.34333333,
+                    26.01277778
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q962600",
+                "Meteorite Name": "Willamette Meteorite",
+                "Country": "United States",
+                "State": "Oregon",
+                "Year": "1902"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.583,
+                    45.3667
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q4045713",
+                "Meteorite Name": "Old Woman meteorite",
+                "Country": "United States",
+                "State": "California",
+                "Year": "1975"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.227527777,
+                    34.580647222
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q4767789",
+                "Meteorite Name": "Annaheim meteorite",
+                "Country": "Canada",
+                "State": "Saskatchewan",
+                "Year": "1916"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.85,
+                    52.4
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q5325264",
+                "Meteorite Name": "Eagle Station meteorite",
+                "Country": "United States",
+                "State": "Kentucky",
+                "Year": "1880"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.9667,
+                    38.6167
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q7921633",
+                "Meteorite Name": "Vermillion meteorite",
+                "Country": "United States",
+                "State": "Kansas",
+                "Year": "1991"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.3614,
+                    39.7364
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q4984880",
+                "Meteorite Name": "Claxton meteorite",
+                "Country": "United States",
+                "State": "Georgia",
+                "Year": "1984"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.9,
+                    32.15
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q4039603",
+                "Meteorite Name": "Goose Lake meteorite",
+                "Country": "United States",
+                "State": "California",
+                "Year": "1938"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.542,
+                    41.98
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q4096315",
+                "Meteorite Name": "Brenham",
+                "Country": "United States",
+                "State": "Kansas",
+                "Year": "1882"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.1636,
+                    37.5825
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q1625058",
+                "Meteorite Name": "Toluca meteorite",
+                "Country": "M\u00e9xico",
+                "State": "Jiquipilco Municipality",
+                "Year": "1776"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.5667,
+                    19.5667
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q8025899",
+                "Meteorite Name": "Winona meteorite",
+                "Country": "United States",
+                "State": "Arizona",
+                "Year": "1928"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.4,
+                    35.2
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q1930079",
+                "Meteorite Name": "Allende meteorite",
+                "Country": "M\u00e9xico",
+                "State": "Pueblito de Allende",
+                "Year": "1969"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -105.316667,
+                    26.966667
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q4984880",
+                "Meteorite Name": "Claxton meteorite",
+                "Country": "United States",
+                "State": "Georgia",
+                "Year": "1984"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.8667,
+                    32.1
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q5003569",
+                "Meteorite Name": "Buzzard Coulee meteorite",
+                "Country": "Canada",
+                "State": "Saskatchewan",
+                "Year": "2008"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -109.848,
+                    52.9961
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q5596601",
+                "Meteorite Name": "Grant meteorite",
+                "Country": "United States",
+                "State": "Cibola County",
+                "Year": "1929"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -107.833333333,
+                    35.15
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Meteorite ID": "Q4049972",
+                "Meteorite Name": "Springwater meteorite",
+                "Country": "Canada",
+                "State": "Saskatchewan",
+                "Year": "1931"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -108.367,
+                    51.9667
+                ]
+            }
+        }
+    ]
+}
