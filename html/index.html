@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Meteorite Sightings X CHAM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Roboto font */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            height: 100vh; 
+            font-family: 'Roboto', sans-serif; 
+            background-color: #8babf1;
+        }
+        #text-left {
+            flex-grow: 1; 
+            padding: 20px; 
+            margin: 10px;
+            overflow-y: auto; 
+            background-color: #d9e4ff; 
+            box-shadow: 3px 0 5px rgba(0,0,0,1.1); 
+            color: #333; 
+            text-align: center; 
+        }
+        #map {
+            flex-grow: 1;  
+            height: 100%; 
+            background-color: #FFFFFF; 
+        }
+        h2, h3, h4, p {
+            margin-bottom: 10px; 
+        }
+        h2 {
+            color: #2a5599; 
+        }
+        p {
+            line-height: 1.6; 
+            text-align: justify; 
+        }
+    </style>
+    </head>
+    <body>
+        <div id="text-left">
+          <div id="text-left">
+              <h2>Citin' the Sightings of Meteorites!</h2>
+              <h3>By Calista Donohoe and Natalie Zak</h3>
+              <h4>INFO 664: Program for Cultural Heritage Final Project</h4>
+              <p>After discovering a dataset consisting of global meteorite landings and sightings over time, our group decided to use this dataset in conjunction with the Chronicling America API and Wikidata to chart instances of meteorite events around the world based on their reported location and the geolocation from the dataset. Our selection of data records instances of meteorite events from 1756-1963, the time range covered by the Chronicling America database. Below, you can explore these sightings on our interactive map, made through MapBox, where red circles indicate a meteorite identified in the dataset, blue circles indicate instances of records of the meteorite in Wikidata, and the heat map (black and gray areas) indicate where, when, and which newspapers reported on it.</p>
+          </div>
+    <div id="map"></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibnphayIsImEiOiJjbHZoMXpuM24wam0xMm1rNHUxb2ZoZzM0In0.rC1bn5Fz1u4JfZo2luHqBw';
+      const map = new mapboxgl.Map({
+        container: 'map', // The HTML element ID where the map will be inserted
+        style: 'mapbox://styles/nzak/clvh4nxoh05q601nu9pq3gcjn', // Replace with your style URL
+        center: [-100, 40], // Center on North America
+        zoom: 3 // Adjusted zoom level for viewing North America
+      });
+      map.on('click', (event) => {
+           const features = map.queryRenderedFeatures(event.point, {
+             layers: ['cleaned-meteorite-landings'] // replace with your layer name
+           });
+
+           if (!features.length) {
+             return;
+           }
+
+           const feature = features[0];
+
+           // Create a Mapbox GL JS Popup using the actual property names
+           const popup = new mapboxgl.Popup()
+             .setLngLat(feature.geometry.coordinates)
+             .setHTML(
+               `<h3>${feature.properties.Name}</h3>` +
+               `<p><strong>Mass:</strong> ${feature.properties["Mass (g)"]} grams<br>` +
+               `<strong>City:</strong> ${feature.properties.Name}<br>` +
+               `<strong>Year:</strong> ${feature.properties.Year}</p>`
+             )
+             .addTo(map);
+         });
+      map.on('click', (event) => {
+        // Query features from a specific layer
+        const features = map.queryRenderedFeatures(event.point, {
+          layers: ['meteorites_wikidata'] // Use the new layer ID
+        });
+
+        if (!features.length) {
+          return;
+        }
+
+        const feature = features[0];
+
+        // Create a Mapbox GL JS Popup for the new layer
+        const popup = new mapboxgl.Popup()
+          .setLngLat(feature.geometry.coordinates)
+          .setHTML(
+            `<h3>${feature.properties["Meteorite Name"]}</h3>` +
+                    `<p><strong>State:</strong> ${feature.properties.State}<br>` +
+                    `<strong>Year:</strong> ${feature.properties.Year}</p>`
+                  )
+          .addTo(map);
+      });
+      map.on('click', (event) => {
+        // Query features from a specific layer
+        const features = map.queryRenderedFeatures(event.point, {
+          layers: ['cham-1900-1963-v3-3wv3wv'] // Use the new layer ID
+        });
+
+        if (!features.length) {
+          return;
+        }
+
+        const feature = features[0];
+
+        // Create a Mapbox GL JS Popup for the new layer
+        const popup = new mapboxgl.Popup()
+          .setLngLat(feature.geometry.coordinates)
+          .setHTML(
+            `<h3>${feature.properties["title"]}</h3>` +
+                    `<p><strong>Place:</strong> ${feature.properties.place}<br>` +
+                    `<strong>Date:</strong> ${feature.properties.date} </p>`
+                  )
+          .addTo(map);
+      });
+
+    </script>
+  </body>
+</html>
